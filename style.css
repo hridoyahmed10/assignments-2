@@ -170,6 +170,7 @@ hr {
     .future-container {
         flex-direction: column;
         margin: 0;
+        padding-left: 30px;
     }
 
     .tittle,
@@ -200,5 +201,6 @@ hr {
     .future-container {
         flex-direction: column;
         margin: 0;
+        padding-left: 30px;
     }
 }
