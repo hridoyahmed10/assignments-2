@@ -16,7 +16,7 @@ body {
     font-size: 24px;
     color: black;
     margin-top: 25px;
-    margin-left: 135px;
+    margin-left: 190px;
 
 }
 
@@ -35,7 +35,7 @@ body {
 
 .main-direction {
     color: black;
-    text-align: justify;
+
 }
 
 .button {
@@ -149,4 +149,56 @@ hr {
     color: azure;
     font-size: 24px;
     padding-left: 20px;
+}
+
+/* ------responsive section---- */
+@media only screen and (max-width:688px) {
+
+    .main-containers,
+    .popular-products,
+    .future-idea {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header-tittle {
+        margin: 0;
+        padding: 15px;
+    }
+
+    .container,
+    .products-section,
+    .future-container {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .tittle,
+    .main-direction,
+    .button {
+        margin-left: 10px;
+    }
+
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+    .main-containers {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .popular-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .future-idea {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .container,
+    .products-section,
+    .future-container {
+        flex-direction: column;
+        margin: 0;
+    }
 }
